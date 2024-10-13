@@ -32,6 +32,21 @@
 }
 
 .restaurant-list {
+  flex-wrap: wrap;
   display: flex;
+}
+
+.body {
+  margin: 10px;
+}
+
+.search-container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.search-container > input {
+  width: 300px;
 }
 /*# sourceMappingURL=index.9e4c6fd2.css.map */
