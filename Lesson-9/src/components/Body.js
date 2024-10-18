@@ -1,6 +1,7 @@
 import RestrauntCard from "./RestrauntCard";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
 
 // const RestrauntCardData = data;
 // const allData = [];
@@ -12,21 +13,23 @@ const Body = () => {
   useEffect(() => {
     getRestaurants();
   }, []);
-  console.log("render outside: with component");
 
   async function getRestaurants() {
     const data = await fetch(
       "https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.65420&lng=77.23730&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
     );
     const json = await data.json();
-    // console.log(json.data.cards[1].card.card.gridElements.infoWithStyle.restaurants);
-    // console.log("render inside effect");
-    setAllRestaurants(
-      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
-    );
-    setFilteredRestaurants(
-      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
-    );
+    const cleanData =
+      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
+        ?.restaurants;
+    if (!cleanData) {
+      console.log("No Data found");
+      return;
+    }
+    console.log(cleanData);
+
+    setAllRestaurants(cleanData);
+    setFilteredRestaurants(cleanData);
   }
 
   function filterData(t, r) {
@@ -69,7 +72,9 @@ const Body = () => {
         <div className="restaurant-list">
           {filteredRestaurants.map((restraunt) => {
             return (
-              <RestrauntCard key={restraunt.info.id} {...restraunt.info} />
+              <Link to={"/restaurant/" + restraunt.info.id}>
+                <RestrauntCard key={restraunt.info.id} {...restraunt.info} />
+              </Link>
             );
           })}
         </div>
