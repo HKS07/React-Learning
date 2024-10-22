@@ -1,0 +1,219 @@
+#root {
+  margin: 0px;
+  padding: 0;
+}
+ a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block; /* Ensures that transform works properly */
+  
+}
+
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.nav-items > ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-items > ul > li {
+  padding: 10px;
+}
+
+.logo {
+  width: 100px;
+}
+
+.card {
+  width: 200px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  height: 450px;
+  transition: transform 0.2s ease; /* Smooth transition */
+}
+.card:hover {
+  transform: scale(0.97);
+}
+
+.card > img {
+  width: 100%;
+}
+
+.restaurant-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  flex-wrap: wrap;
+  transition: transform 0.3s ease;
+}
+
+.body {
+  margin: 10px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-container > input {
+  width: 300px;
+}
+
+.shimmer {
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.shimmer-card {
+  width: 200px;
+  height: 420px;
+  border: 1px solid black;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.restaurant{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .restaurantHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 40%;
+} */
+
+.restaurantHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e0e0e0;  /* Light grey border for subtlety */
+    width: 40%;
+    padding: 20px;              /* Add padding for better spacing */
+    border-radius: 12px;         /* Rounded corners */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);  /* Soft shadow */
+    background-color: #ffffff;   /* Clean white background */
+    font-family: 'Arial', sans-serif;  /* Simple font for modern look */
+    color: #333;                 /* Dark grey text for minimalist contrast */
+}
+
+.restaurantHeader h1, .restaurantHeader h2 {
+    margin: 0;
+    padding: 0;
+    color: #222;                /* Darker header color for subtle emphasis */
+    font-weight: 600;           /* Slightly bold font for headers */
+}
+
+.restaurantHeader p {
+    color: #666;                /* Lighter text for secondary information */
+    font-weight: 300;
+    margin-top: 10px;           /* Spacing between paragraphs */
+}
+
+
+.restaurantHeader > img {
+    width: 50%;
+    
+}
+
+.curResCard{
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.imgCurResCard {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    border-radius: 5px;
+    
+}
+.imgCurResCard > img{
+    width: 70%;
+    border-radius: 5px;
+}
+
+
+/* Login page css */
+.login {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form label {
+  width: 100px;
+  margin-right: 5px;
+  font-size: large;
+}
+
+.form .e {
+  position: relative;
+}
+
+.form  input {
+  width: 250px;
+  height: 30px;
+}
+
+.error-message {
+  position: absolute;
+  right:5px;
+  top: 6px;
+  height: 20px;
+  width: 120px;
+  color: red;
+  font-size: medium;
+  font-weight: 600;
+  border: 1px solid red;
+  padding: 2px;
+  border-radius: 5px;
+  
+
+}
+
+form div {
+  margin: 10px;
+}
+
+form button {
+  width: 100px;
+  height: 30px;
+  margin: 10px;
+}
