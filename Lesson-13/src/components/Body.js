@@ -45,14 +45,14 @@ const Body = () => {
       {filteredRestaurants?.length === 0 && allRestaurants?.length > 0 ? (
         <h1>No restaurant matched your filter!</h1>
       ) : (
-        <div className="flex flex-wrap justify-center p-8 mt-8 border border-grey-300 rounded-2xl">
+        <div className="flex flex-wrap justify-center p-4 mt-8 mx-4 border border-grey-300 rounded-2xl">
           {filteredRestaurants?.map((restraunt) => {
             return (
               <Link
                 key={restraunt?.info?.id}
                 to={"/restaurant/" + restraunt?.info?.id}
               >
-                <RestrauntCard key={restraunt?.info?.id} {...restraunt?.info} />
+                <RestrauntCard key={restraunt?.info?.id} {...restraunt?.info}/>
               </Link>
             );
           })}
