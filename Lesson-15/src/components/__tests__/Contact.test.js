@@ -3,6 +3,15 @@ import ContactUs from '../ContactUs';
 import '@testing-library/jest-dom';
 
 describe("Contact us page test case", () => {
+
+    // beforeAll(()=>{
+    //     console.log('befpre all');
+    // });
+
+    // beforeEach(() =>{
+    //     console.log('before each');
+    // });
+
     test("should load contact us component", () => {
         render(<ContactUs/>);
     
@@ -32,7 +41,6 @@ describe("Contact us page test case", () => {
     test("should load 2 input boxes on the contact us component", ()=> {
         render(<ContactUs/>);
         const inputBoxes = screen.getAllByRole('textbox');
-        console.log(inputBoxes);
         
         expect(inputBoxes[0]).toBeInTheDocument();
         expect(inputBoxes[1]).toBeInTheDocument();

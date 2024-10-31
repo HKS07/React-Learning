@@ -24,7 +24,7 @@ export const RestaurantCard = (props) => {
   };
 
   return (
-    <div className="flex w-full items-center mx-8 my-4 border rounded-2xl border-grey-300 shadow-md">
+    <div data-testid="menucard" className="flex w-full items-center mx-8 my-4 border rounded-2xl border-grey-300 shadow-md">
       <div className="w-60 p-2">
         <img
           src={IMG_CDN_URL + props.imageId}
@@ -70,10 +70,9 @@ export const RestaurantCard = (props) => {
 
 const Restaurant = () => {
   const { id } = useParams();
-  // const [restaurant, setRestaurant] = useState(null);
-  // const [restaurantMenu, setRestaurantMenu] = useState([]);
 
   const [restaurant, restaurantMenu] = useRestaurant(id);
+  
 
   return !restaurant ? (
     <Shimmer />

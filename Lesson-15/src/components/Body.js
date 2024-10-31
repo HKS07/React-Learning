@@ -10,7 +10,7 @@ const Body = () => {
   const [searchInput, setSearchInput] = useState("");
   const [allRestaurants, filteredRestaurants, setFilteredRestaurants] =
     useDataFetch();
-
+  
   // const isOnline = useOnline();
   // if (!isOnline) {
   //   return <h1> Offline, please check your internet connection.</h1>;
@@ -25,6 +25,7 @@ const Body = () => {
       <div className="flex justify-center items-center bg-white">
         <input
           type="text"
+          data-testid= "searchInput"
           className="px-2 py-1 mx-2 border border-grey rounded-lg w-64 focus:border-gray-500"
           placeholder="Search"
           value={searchInput}

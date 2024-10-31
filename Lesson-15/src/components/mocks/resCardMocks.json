@@ -1,0 +1,75 @@
+{
+    "id": "804071",
+    "name": "Pizza Hut",
+    "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/7/18/1848de26-14f7-444f-9cb8-f59342077782_804071.jpg",
+    "locality": "H.C. Sen Marg",
+    "areaName": "Omaxe ChandniChowk",
+    "costForTwo": "₹350 for two",
+    "cuisines": [
+        "Pizzas"
+    ],
+    "avgRating": 4.1,
+    "parentId": "721",
+    "avgRatingString": "4.1",
+    "totalRatingsString": "143",
+    "sla": {
+        "deliveryTime": 37,
+        "lastMileTravel": 1.2,
+        "serviceability": "SERVICEABLE",
+        "slaString": "35-40 mins",
+        "lastMileTravelString": "1.2 km",
+        "iconType": "ICON_TYPE_EMPTY"
+    },
+    "availability": {
+        "nextCloseTime": "2024-10-31 23:59:00",
+        "opened": true
+    },
+    "badges": {
+        "imageBadges": [
+            {
+                "imageId": "Rxawards/_CATEGORY-Pizza.png",
+                "description": "Delivery!"
+            }
+        ]
+    },
+    "isOpen": true,
+    "type": "F",
+    "badgesV2": {
+        "entityBadges": {
+            "imageBased": {
+                "badgeObject": [
+                    {
+                        "attributes": {
+                            "description": "Delivery!",
+                            "imageId": "Rxawards/_CATEGORY-Pizza.png"
+                        }
+                    }
+                ]
+            },
+            "textBased": {},
+            "textExtendedBadges": {}
+        }
+    },
+    "aggregatedDiscountInfoV3": {
+        "header": "50% OFF",
+        "subHeader": "UPTO ₹90"
+    },
+    "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+            "lottie": {},
+            "video": {}
+        }
+    },
+    "reviewsSummary": {},
+    "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+    "restaurantOfferPresentationInfo": {},
+    "externalRatings": {
+        "aggregatedRating": {
+            "rating": "--"
+        }
+    },
+    "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+}
+
+
